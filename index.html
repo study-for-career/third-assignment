@@ -7,8 +7,98 @@
     <!-- Tailwind & DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/b93b3bbb7d.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Custom fonts and colors -->
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                manrope: [
+                '"Manrope", sans-serif;',
+                ]
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'house-primary': '#ABEF5F',
+                'title-color': '#212121',
+                'details-color': '#494949',
+              }
+              
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="font-manrope">
+    <!-- Header -->
+     <header>
+        <!-- Navbar & Navigation menu -->
+         <div class="container mx-auto">
+            <nav>
+                <div class="navbar flex justify-between">
+                    <!-- Main Logo Area -->
+                    <div>
+                      <!-- Main Logo Title -->
+                      <a class="font-bold text-xl flex items-center gap-1">
+                        <i class="fa-solid fa-arrow-right-long -rotate-45 bg-house-primary p-2 rounded-full">
+                        </i>
+                       <span class="text-title-color font-bold text-3xl">Rinterio</span>
+                    </a>
+                    </div> 
+                    <!-- Menu Bar for Mobile Devices -->
+                     <div class="lg:hidden shadow-lg p-2 rounded-full text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                          
+                     </div>
+                    <!-- Navigation Menu -->
+                    <div class="hidden lg:flex lg:justify-between">
+                        <ul class="menu menu-horizontal px-1">
+                          <li class="text-details-color font-bold"><a href="">Home</a></li>
+                          <li class="text-gray-500"><a href="">Services</a></li>
+                          <li class="text-gray-500"><a href="">Portfolio</a></li>
+                          <li class="text-gray-500"><a href="">Blogs</a></li>
+                          <li class="text-gray-500"><a href="">Contact Us</a></li>
+                          
+                        </ul>
+                    </div>
+                    <!-- Button Area -->
+                    <div class="hidden lg:flex lg:gap-2">
+                            <!-- Search Icon -->
+                        <div class="shadow-lg p-2 rounded-full text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                              </svg>           
+                        </div>
+                        <!-- Cart Icon -->
+                         <div class="shadow-lg p-2 rounded-full text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          </div>
+                          <!-- Button -->
+                           <div>
+                            <button class="btn bg-house-primary px-5 font-bold rounded-3xl">Book Consult 
+                                <span>
+                                    <i class="fa-solid fa-arrow-right-long bg-black text-white -rotate-45 p-2 rounded-full">
+                                    </i>
+                                </span>
+                            </button>
+                           </div>
+                        
+                    </div>
+                    
+                </div>
+             </nav>
+         </div>
+     </header>
 
 </body>
 </html>
