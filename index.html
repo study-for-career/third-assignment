@@ -122,12 +122,12 @@
       <main>
         <!-- About us -->
         <section class="bg-gray-100 lg:py-10 relative">
-          <div class="hidden lg:block lg:absolute top-8 left-4 w-20" ><img src="./assets/Vector.png" alt=""></div>
+          <div class="hidden lg:block lg:absolute top-[4%] left-[1%] w-20" ><img src="./assets/Vector.png" alt=""></div>
           <div class="container mx-auto p-5 lg:flex gap-4 items-center">
               <!-- About us text area -->
                <div class="space-y-3 mb-4">
                   <!-- We Design part -->
-                   <div class="space-y-3 text-center">
+                   <div class="space-y-3 text-center lg:text-left">
                       <button class="border-none bg-white rounded-3xl px-3 py-1 text-sm"><i class="fa-solid fa-arrow-right-long mr-2"></i>About Us</button>
                       <h1 class="font-bold text-4xl text-title-color">We design thoughtful, liveable spaces</h1>
                       <p class="text-details-color">The barn house captivates with its blend of rustic charm and 
@@ -214,9 +214,9 @@
                   <p class="text-details-color">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
                 <!-- Portfolio Cards Area-1 -->
-                 <div class="md:grid md:grid-cols-3 gap-5 space-y-4">
+                 <div class="md:grid md:grid-cols-3 gap-5">
                     <!-- Commercial left-text -->
-                     <div class="col-span-2 md:flex gap-5 border-2 p-4 rounded-xl">
+                     <div class="col-span-2 md:flex gap-5 border-2 p-4 rounded-xl mb-4 lg:mb-0">
                       <!-- Text-area-Photo -->
                        <div class="w-full mb-4"><img class="w-full" src="./assets/img1.png" alt=""></div>
                       <!-- Text-area-details -->
@@ -232,14 +232,14 @@
                        </div>
                      </div>
                      <!-- Commercial Right Photo -->
-                      <div class="col-span-1 border-2 p-4 rounded-lg"><img class="w-full" src="./assets/img2.png" alt=""></div>
+                      <div class="col-span-1 border-2 p-4 rounded-lg "><img class="w-full" src="./assets/img2.png" alt=""></div>
                  </div>
                  <!-- Portfolio Cards Area-2 -->
                  <div class="md:grid grid-cols-4 gap-5 space-y-4">
                   <!-- Three Column Card Phota-start -->
                    <div class="col-span-1 border-2 p-4 rounded-lg mt-4"><img class="w-full" src="./assets/img3.png" alt=""></div>
                    <!-- Three Column Card Phota-Middle -->
-                   <div class="col-span-2 md:flex gap-5 border-2 p-4 rounded-xl">
+                   <div class="col-span-2 md:grid md:grid-cols-2 gap-5 border-2 p-4 rounded-xl">
                     <!-- Text-area-Photo -->
                      <div class="w-full mb-4"><img class="w-full h-full" src="./assets/img4.png" alt=""></div>
                     <!-- Text-area-details -->
@@ -259,6 +259,37 @@
                 </div>
             </div>
           </section>
+
+          <!-- Let's Discuss Next Project -->
+           <section class="bg-[url('./assets/bg.jpg')]">
+              <div class="container mx-auto px-5 py-10 md:px-28 md:py-16">                
+                <!-- Next Project Title Area -->
+                 <div>
+                  <div class="md:w-2/3 mx-auto text-center space-y-3 mb-2">
+                    <button class="border-none bg-light-primary rounded-3xl px-3 py-1 text-sm"><i class="fa-solid fa-arrow-right-long mr-2"></i>Let's Connect</button>
+                    <h1 class="text-3xl font-bold text-title-color">Let’s Discuss Next Project</h1>
+                    <p class="text-details-color">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                  </div>
+                </div>
+                <!-- Form Area -->
+                 <div>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-3" action="">
+                      <input class="p-3 rounded-full" type="text" placeholder="First Name*">
+                      <input class="p-3 rounded-full" type="text" placeholder="Last Name*">
+                      <input class="p-3 rounded-full" type="number" placeholder="Phone Number*">
+                      <input class="p-3 rounded-full" type="email" placeholder="Email Number*">
+                      <textarea class="p-3 h-60 rounded-3xl md:col-span-2" name="text" id="" placeholder="Write your message here"></textarea>
+                      <!-- Send Email Button -->
+                      <button class="btn md:col-span-2 bg-house-primary px-5 font-bold rounded-3xl border-none">Send Mail 
+                        <span>
+                            <i class="fa-solid fa-arrow-right-long bg-black text-white -rotate-45 p-2 rounded-full">
+                            </i>
+                        </span>
+                    </button>
+                    </form>
+                 </div>
+              </div>
+           </section>
       </main>
 </body>
 </html>
